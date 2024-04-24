@@ -1,0 +1,13 @@
+def power(a, n):
+    result = 1
+    for i in range(n):
+        result *= a
+    return result
+a = float(input("Введите основание a: "))
+n = int(input("Введите показатель степени n: "))
+if a > 0:
+    result = power(a, n)
+    print(f"{a} в степени {n} равно {result}")
+else:
+    print("Ошибка: основание должно быть больше 0")
+    
